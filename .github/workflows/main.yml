@@ -31,7 +31,7 @@ jobs:
       - name: build next
         run: npm run build && ./node_modules/.bin/next export
         env:
-          X-API-KEY: ${{ secrets.X_API_KEY }}
+          API-KEY: ${{ secrets.X_API_KEY }}
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
