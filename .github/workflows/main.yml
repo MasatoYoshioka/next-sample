@@ -29,10 +29,9 @@ jobs:
       - name: install modules
         run: npm install
       - name: build next
-        run: echo ${{ secrets.X_API_KEY }}#npm run build && ./node_modules/.bin/next export
+        run: npm run build && ./node_modules/.bin/next export
         env:
           API-KEY: ${{ secrets.X_API_KEY }}
-          HOGE: 'hoge' 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
