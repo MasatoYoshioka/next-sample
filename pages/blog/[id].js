@@ -29,6 +29,7 @@ export const getStaticProps = async context => {
     const key = {
         headers: {'X-API-KEY': process.env.API_KEY},
     };
+    console.log(process.env.HOGE);
     const data = await fetch(
         'https://m-y.microcms.io/api/v1/blogs/' + id,
         key
