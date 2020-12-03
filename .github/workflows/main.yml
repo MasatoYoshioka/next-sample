@@ -29,7 +29,7 @@ jobs:
       - name: install modules
         run: npm install
       - name: build next
-        run: node hoge.js#npm run build && ./node_modules/.bin/next export
+        run: node hoge.js
         env:
           API-KEY: ${{ secrets.X_API_KEY }}
       - name: Configure AWS credentials
