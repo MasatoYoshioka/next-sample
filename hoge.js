@@ -1,4 +1,4 @@
-const key = process.env.NODE_ENV;
+const key = process.env.API-KEY;
 console.log(key);
 
 const hoge = process.env.HOGE;
